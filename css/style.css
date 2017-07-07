@@ -1,0 +1,30 @@
+
+.date {
+	height: 30%;
+	text-align: center;
+	font-size: 20px;
+}
+
+.hours, .minutes, .seconds, .colon {
+	height: 25vh;
+	text-align: center;
+	font-size: 17vh;
+}
+
+.mils {
+	height: 25vh;
+	text-align: center;
+	font-size: 16vh;
+	padding-top: 1.5vh;
+}
+
+.amOrPm {
+	font-size: 8vh;
+	text-align: center;
+	padding-top: 10vh;
+	height: 25vh;
+}
+
+.timezone {
+	height: 300px;
+}
