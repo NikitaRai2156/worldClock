@@ -24,18 +24,7 @@ function changeTimeFormat() {
 function incrementClock() {
 	userTZ = $("#selTZ").val();
 	now = moment.utc();
-
-	/*$("#12hbtn").click(function() {
-		timeFormatSelect = timeObj.timeFormat[0];
-		$(".amOrPm").show();
-	});
-
-	$("#24hbtn").click(function() {
-		timeFormatSelect = timeObj.timeFormat[1];
-		$(".amOrPm").hide();
-	});*/
-	changeTimeFormat();
-
+	
 	if(userTZ >= 0) {
 		now.add(userTZ, 'hours');
 	}
@@ -76,4 +65,5 @@ function incrementClock() {
 }
 
 var clockUpdate = setInterval(incrementClock, 1);
+changeTimeFormat();
 
